@@ -1,4 +1,5 @@
 function global_netnondc_m(example, tau, t_end, nx_inner, nv)
+% This code was written by Simone Neifeld. AI was used to improve effiency and write doumentation and comments for the code.
 %GLOBAL_NETNONDC_M  Diffusion limit of a linear kinetic model on a network
 %   with Maxwellian boundary conditions at the nodes.
 %
