@@ -1,4 +1,5 @@
 function [nE, nN, N, pB, uB, rhoB] = setup_network_topology(example)
+% This code is written without any help of AI
 % Initializes network topology and macro boundary conditions
 % based on the provided 'example'.
 
