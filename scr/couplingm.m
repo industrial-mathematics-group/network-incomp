@@ -1,4 +1,5 @@
 function [S, q, rho] = couplingm(example, g, nE, nN, N)
+% This code is written without any help of AI.
 % Computes coupling conditions at network nodes.
 % Solves a linear system based Half-moment approximation and kinetic coupling conditions
 arguments
