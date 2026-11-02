@@ -1,4 +1,5 @@
 function out = global_netnondc_hf(example, tau, t_end, nx_inner, nv)
+% This code was written by Simone Neifeld. AI was used to improve effiency and write doumentation and comments for the code.
 %GLOBAL_NETNONDC_HF  Diffusion limit of a linear kinetic model on a network.
 %
 %   GLOBAL_NETNONDC_HF(example, tau, t_end, nx_inner, nv, save_data) solves the
