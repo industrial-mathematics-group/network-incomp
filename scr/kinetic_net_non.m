@@ -1,4 +1,5 @@
 function kinetic_net_non(example, epsilon, tau, t_end, nx_inner, nv)
+% This code was written by Simone Neifeld. AI was used to improve effiency and write doumentation and comments for the code.
 %KINETIC_NET_NON  Reference solver for the kinetic BGK model on a network.
 %
 %   KINETIC_NET_NON(example, epsilon, tau, t_end, nx_inner, nv, save_data)
