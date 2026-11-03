@@ -157,13 +157,13 @@ for iN= 1:nN
         root(1, IE) = ((dx^2/dt_incomp + 2*tau) - (dx/dt_incomp) * term_sqrt) / (2*tau - u_val*dx);
         root(2, IE) = ((dx^2/dt_incomp + 2*tau) + (dx/dt_incomp) * term_sqrt) / (2*tau - u_val*dx);
 
+
         % Exterior edges: factor determined by the Dirichlet condition
         if N{iN}.ad(ie) == 0
-            factor = (root(2, IE) * root(1, IE)^nx - root(1, IE) * root(2, IE)^nx) / (root(1, IE)^nx - root(2, IE)^nx);
             if N{iN}.sign(ie) < 0
-                kappa(IE, 2) = factor;
+                kappa(IE, 2) = (root(2, IE)^(nx-1)*(1+root(1,IE))  - root(1, IE)^(nx-1) *(1+root(2,IE))) / (root(2, IE)^nx*(1+root(1,IE))  - root(1, IE)^nx *(1+root(2,IE)));
             else
-                kappa(IE, 1) = factor;
+                kappa(IE, 1) = (root(2,IE)*root(1, IE)^(nx-1)*(1+root(1,IE))  - root(1,IE)*root(2, IE)^(nx-1) *(1+root(2,IE))) / (root(1, IE)^nx*(1+root(1,IE))  - root(2, IE)^nx *(1+root(2,IE)));
             end
         end
     end
